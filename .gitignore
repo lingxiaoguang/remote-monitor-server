@@ -1,0 +1,4 @@
+/node_modules
+/dist
+/tmp.png
+.yarn-error*
