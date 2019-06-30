@@ -1,0 +1,35 @@
+{
+  "name": "remote-monitor-server",
+  "version": "1.0.0",
+  "description": "remote monitor server",
+  "main": "index.js",
+  "keywords": [
+    "remote monitor"
+  ],
+  "scripts": {
+    "watch:run": "nodemon --watch 'src/**/*' -e ts,tsx --exec ts-node src/index.ts",
+    "watch:lint": "nodemon --watch 'src/**/*' -e ts,tsx --exec \"npm run lint\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "lint": "eslint -c .eslintrc.json src/**/*"
+  },
+  "author": "zhaixuguang3081 <zhaixuguang3081@ipalfish.com> (http://gitlab.pri.ibanyu.com/zhaixuguang3081)",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@types/koa": "^2.0.48",
+    "@types/socket.io": "^2.1.2",
+    "get-pixels": "^3.3.2",
+    "koa": "^2.7.0",
+    "robot-js": "^2.0.0",
+    "screenshot-desktop": "^1.8.0",
+    "socket.io": "^2.2.0",
+    "ts-lint": "^4.5.1",
+    "typescript": "^3.5.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.11.0",
+    "@typescript-eslint/parser": "^1.11.0",
+    "eslint": "^6.0.1"
+  }
+}
