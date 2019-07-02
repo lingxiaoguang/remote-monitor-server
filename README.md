@@ -4,8 +4,7 @@
 
 启动服务端后，[客户端](https://github.com/lingxiaoguang/remote-monitor-client)输入ip和端口号，就可以操纵服务端的桌面。
 
-![1](case1.png)
-![2](case2.png)
+![remote-monitor](./remote-monitor.gif)
 
 # 安装
 
