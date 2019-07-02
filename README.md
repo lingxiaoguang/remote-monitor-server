@@ -1,43 +1,40 @@
-# 远程桌面监控服务端
+# Remote Desktop Monitor Server
 
-语言: [中文](README.md) / [English](README_en.md)
+Language: [中文](README_zh.md) / [English](README.md)
 
-远程桌面监控服务端
+Remote Desktop Monitor Server
 
-启动服务端后，[客户端](https://github.com/lingxiaoguang/remote-monitor-client)输入ip和端口号，就可以操纵服务端的桌面。
+First, start the server.Then, input the ip and port in [client](https://github.com/lingxiaoguang/remote-monitor-client)
+and now you can monitor and operate the desktop of server.
 
 ![remote-monitor](./remote-monitor.gif)
 
-# 安装
+# Installation
 
 ```
 yarn global add remote-monitor-server
 
 ```
 
-注意： [robot-js](https://github.com/robot/robot-js) 因为依赖了一些c++模块，需要9.x以下版本的node。
-      如果安装失败，可以试试单独安装一下robot-js
+Tip:
+[robot-js](https://github.com/robot/robot-js) depends on some c++ module,so it require node version under 9.x.
+If your installation failed, try install robot-js alone.
 
-# 运行
+# Run
 
 ```
 remote-monitor-server start 
 ```
-启动服务器
+start server
 
 选项：
- - --version                      显示版本号                               [布尔]
- - --help                         显示帮助信息                             [布尔]
- - ----port                       端口号
- - ----monitorScreenshotInterval  截图间隔
- - ----controlEnable              是否允许远程控制
- - ----controlLog                 是否打印鼠标键盘事件的日志
+ - --version                      show version                         
+ - --help                         show help info
+ - ----port                       port
+ - ----monitorScreenshotInterval  screenshot interval
+ - ----controlEnable              is enable remote control
+ - ----controlLog                 is enable event log
 
-# 原理
+# Implemention
 
-见 [Node.js实现远程桌面监控](https://juejin.im/post/5d18d4c36fb9a07ecb0bbe7b)
-
-
-
-
-
+[Node.js实现远程桌面监控](https://juejin.im/post/5d18d4c36fb9a07ecb0bbe7b)
