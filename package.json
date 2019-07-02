@@ -2,7 +2,10 @@
   "name": "remote-monitor-server",
   "version": "1.1.0",
   "description": "remote monitor server",
-  "main": "index.js",
+  "bin": {
+    "remote-monitor-server": "./dist/cli.js"
+  },
+  "main": "./dist/index.js",
   "keywords": [
     "remote monitor"
   ],
