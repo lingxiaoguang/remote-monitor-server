@@ -5,7 +5,7 @@ import { get, set } from 'lodash';
 
 const defaultConfig = {
     monitor: {
-        screenshotInterval: 250,
+        screenshotInterval: 500,
     },
     control: {
         enable: true,
