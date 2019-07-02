@@ -1,6 +1,7 @@
 const screenshot = require('screenshot-desktop')
+const configuration = require('./Configuration').getInstance();
 
-const SCREENSHOT_INTERVAL = 250;
+const SCREENSHOT_INTERVAL = configuration.getConfig('monitor.screenshotInterval');
 
 export const createScreenshot = (): Promise<[string, Buffer]> => {
     return screenshot({format: 'png'}).then((img): [string, Buffer] => {

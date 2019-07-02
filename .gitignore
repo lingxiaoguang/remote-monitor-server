@@ -2,3 +2,4 @@
 /dist
 /tmp.png
 .yarn-error*
+.yarn-lock*

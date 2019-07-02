@@ -1,5 +1,8 @@
 
 const { Mouse, Point, Keyboard } = require('robot-js');
+const configuration = require('./Configuration').getInstance();
+
+const enableLog = configuration.getConfig('control.log');
 
 interface MouseEvent {
     type: string;
@@ -61,7 +64,9 @@ export default class EventExecuter {
     }
 
     public exectue(eventInfo): void {
-        console.log(eventInfo);
+        if (enableLog) {
+            console.log(eventInfo);    
+        }
         switch (eventInfo.type) {
             case 'keyboard':
                 this.executeKeyboardEvent(eventInfo.event);
