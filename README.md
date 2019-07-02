@@ -25,12 +25,12 @@ remote-monitor-server start
 启动服务器
 
 选项：
-  --version                      显示版本号                               [布尔]
-  --help                         显示帮助信息                             [布尔]
-  ----port                       端口号
-  ----monitorScreenshotInterval  截图间隔
-  ----controlEnable              是否允许远程控制
-  ----controlLog                 是否打印鼠标键盘事件的日志
+ - --version                      显示版本号                               [布尔]
+ - --help                         显示帮助信息                             [布尔]
+ - ----port                       端口号
+ - ----monitorScreenshotInterval  截图间隔
+ - ----controlEnable              是否允许远程控制
+ - ----controlLog                 是否打印鼠标键盘事件的日志
 
 # 原理
 
