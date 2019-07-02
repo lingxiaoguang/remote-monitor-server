@@ -1,5 +1,7 @@
 # 远程桌面监控服务端
 
+语言: [中文](README.md) / [English](README.en.md)
+
 远程桌面监控服务端
 
 启动服务端后，[客户端](https://github.com/lingxiaoguang/remote-monitor-client)输入ip和端口号，就可以操纵服务端的桌面。
@@ -13,7 +15,7 @@ yarn global add remote-monitor-server
 
 ```
 
-注意： robot-js因为依赖了一些c++模块，需要9.x以下版本的node。
+注意： [robot-js](https://github.com/robot/robot-js) 因为依赖了一些c++模块，需要9.x以下版本的node。
       如果安装失败，可以试试单独安装一下robot-js
 
 # 运行
