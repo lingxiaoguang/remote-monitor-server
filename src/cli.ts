@@ -17,7 +17,7 @@ script.command('start', '启动服务器', (yargs) => {
     description: '是否允许远程控制'
   })
   yargs.option('--controlLog', {
-    dscription: '是否打印鼠标键盘事件的日志'
+    description: '是否打印鼠标键盘事件的日志'
   })
 }, function (options) {
   if(options.port) {
