@@ -1,7 +1,7 @@
 {
   "name": "remote-monitor-server",
-  "version": "1.2.5",
-  "description": "remote monitor server",
+  "version": "1.2.6",
+  "description": "start remote monitor server by cli",
   "bin": {
     "remote-monitor-server": "./dist/cli.js"
   },
