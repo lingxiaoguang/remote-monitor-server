@@ -1,7 +1,7 @@
 
 const cosmiconfig = require('cosmiconfig');
 const configFinder = cosmiconfig('remoteMonitorServer');
-import { get, set } from 'lodash';
+import { get, set, defaultsDeep } from 'lodash';
 
 const defaultConfig = {
     monitor: {
@@ -25,7 +25,7 @@ class Configuration {
            return instance;
         }
         const configFile = configFinder.searchSync();
-        this.config = Object.assign({}, defaultConfig, configFile && configFile.config);
+        this.config = defaultsDeep({}, defaultConfig, configFile && configFile.config);
         instance = this;
     }
 
