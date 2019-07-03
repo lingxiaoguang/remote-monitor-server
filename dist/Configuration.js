@@ -22,7 +22,7 @@ class Configuration {
             return instance;
         }
         const configFile = configFinder.searchSync();
-        this.config = Object.assign({}, defaultConfig, configFile && configFile.config);
+        this.config = lodash_1.defaultsDeep({}, defaultConfig, configFile && configFile.config);
         instance = this;
     }
     static getInstance() {
