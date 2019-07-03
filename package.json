@@ -1,6 +1,6 @@
 {
   "name": "remote-monitor-server",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "description": "start remote monitor server by cli",
   "bin": {
     "remote-monitor-server": "./dist/cli.js"
@@ -17,7 +17,8 @@
     "start": "ts-node src/index.ts",
     "lint": "eslint -c .eslintrc.json src/**/*",
     "cli-debug": "ts-node ./src/cli.ts",
-    "cli": "node ./dist/cli.js"
+    "cli": "node ./dist/cli.js",
+    "publish": "num run build & npm publish"
   },
   "author": "lingxiaoguang <lingxiao_guang@foxmail.com.com>",
   "license": "UNLICENSED",
@@ -39,3 +40,4 @@
     "eslint": "^6.0.1"
   }
 }
+

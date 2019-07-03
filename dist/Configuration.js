@@ -21,7 +21,8 @@ class Configuration {
         if (instance) {
             return instance;
         }
-        this.config = Object.assign({}, defaultConfig, configFinder.searchSync().config);
+        const configFile = configFinder.searchSync();
+        this.config = Object.assign({}, defaultConfig, configFile && configFile.config);
         instance = this;
     }
     static getInstance() {
