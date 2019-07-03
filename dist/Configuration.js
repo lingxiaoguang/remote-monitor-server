@@ -5,14 +5,14 @@ const configFinder = cosmiconfig('remoteMonitorServer');
 const lodash_1 = require("lodash");
 const defaultConfig = {
     monitor: {
-        screenshotInterval: 250,
+        screenshotInterval: 500,
     },
     control: {
         enable: true,
-        log: true
+        log: true // 是否打印日志
     },
     server: {
-        port: 3000
+        port: 3000 // 服务器端口号
     }
 };
 let instance;
@@ -21,8 +21,7 @@ class Configuration {
         if (instance) {
             return instance;
         }
-        const configFile = configFinder.searchSync()
-        this.config = Object.assign({}, defaultConfig, configFile && configFile.config);
+        this.config = Object.assign({}, defaultConfig, configFinder.searchSync().config);
         instance = this;
     }
     static getInstance() {

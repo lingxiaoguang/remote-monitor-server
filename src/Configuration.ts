@@ -5,14 +5,14 @@ import { get, set } from 'lodash';
 
 const defaultConfig = {
     monitor: {
-        screenshotInterval: 500,
+        screenshotInterval: 500,// 截图的间隔
     },
     control: {
-        enable: true,
-        log: true
+        enable: true,// 是否允许客户端控制
+        log: true// 是否打印日志
     },
     server: {
-        port: 3000
+        port: 3000// 服务器端口号
     }
 }
 

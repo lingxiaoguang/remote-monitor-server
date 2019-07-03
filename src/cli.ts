@@ -32,7 +32,7 @@ script.command('start', '启动服务器', (yargs) => {
   if(options.controlLog) {
     conf.setConfig('control.log', options.controlLog)
   }
-  require('./index');
+  require('./index');// 启动服务器
 })
 
 script.help();

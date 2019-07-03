@@ -1,6 +1,6 @@
 {
   "name": "remote-monitor-server",
-  "version": "1.2.3",
+  "version": "1.2.5",
   "description": "remote monitor server",
   "bin": {
     "remote-monitor-server": "./dist/cli.js"
@@ -19,8 +19,9 @@
     "cli-debug": "ts-node ./src/cli.ts",
     "cli": "node ./dist/cli.js"
   },
-  "author": "zhaixuguang3081 <zhaixuguang3081@ipalfish.com> (http://gitlab.pri.ibanyu.com/zhaixuguang3081)",
+  "author": "lingxiaoguang <lingxiao_guang@foxmail.com.com>",
   "license": "UNLICENSED",
+  "homepage": "https://github.com/lingxiaoguang/remote-monitor-server",
   "dependencies": {
     "cosmiconfig": "^5.2.1",
     "get-pixels": "^3.3.2",
