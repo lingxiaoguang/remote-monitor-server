@@ -33,4 +33,7 @@ script.command('start', '启动服务器', (yargs) => {
 });
 script.help();
 script.argv;
+if (process.argv.length <= 2) {
+    console.log('加上--help参数获取命令列表');
+}
 //# sourceMappingURL=cli.js.map
